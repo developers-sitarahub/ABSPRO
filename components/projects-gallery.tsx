@@ -2,11 +2,8 @@
 
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { useState } from 'react'
-import { Eye } from 'lucide-react'
 
 export function ProjectsGallery() {
-  const [selectedProject, setSelectedProject] = useState<number | null>(null)
 
   const projects = [
     { id: 1, image: '/projects/project-1.jpg', title: 'Modern Luxury Villa', category: 'Residential' },
@@ -95,13 +92,6 @@ export function ProjectsGallery() {
                   <div className="text-white">
                     <p className="text-xs sm:text-sm font-semibold text-orange-300 mb-2">{project.category}</p>
                     <h3 className="text-lg sm:text-xl font-bold mb-3">{project.title}</h3>
-                    <button
-                      onClick={() => setSelectedProject(project.id)}
-                      className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 bg-slate-900 text-white rounded-lg text-xs sm:text-sm font-semibold hover:bg-slate-800 transition-colors"
-                    >
-                      <Eye size={16} />
-                      View Project
-                    </button>
                   </div>
                 </motion.div>
               </div>
