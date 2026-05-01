@@ -6,18 +6,18 @@ import Image from 'next/image'
 export function ProjectsGallery() {
 
   const projects = [
-    { id: 1, image: '/projects/project-1.jpg', title: 'Modern Luxury Villa', category: 'Residential' },
-    { id: 2, image: '/projects/project-2.jpg', title: 'Contemporary Home', category: 'Residential' },
-    { id: 3, image: '/projects/project-3.jpg', title: 'Multi-Story Residence', category: 'Residential' },
-    { id: 4, image: '/projects/project-4.jpg', title: 'Beachfront Estate', category: 'Luxury' },
-    { id: 5, image: '/projects/project-5.jpg', title: 'Modern Villa Night View', category: 'Luxury' },
-    { id: 6, image: '/projects/project-6.jpg', title: 'Green Building Design', category: 'Eco-Friendly' },
-    { id: 7, image: '/projects/project-7.jpg', title: 'Premium Interior Space', category: 'Interior' },
-    { id: 8, image: '/projects/project-8.jpg', title: 'Luxury Kitchen Design', category: 'Interior' },
-    { id: 9, image: '/projects/project-9.jpg', title: 'Complex Residential Block', category: 'Commercial' },
-    { id: 10, image: '/projects/project-10.jpg', title: 'Brick & Modern Villa', category: 'Residential' },
-    { id: 11, image: '/projects/project-11.jpg', title: 'Apartment Complex', category: 'Commercial' },
-    { id: 12, image: '/projects/project-12.jpg', title: 'Modern Mixed Spaces', category: 'Residential' },
+    { id: 1, image: '/projects/project-1.jpeg', title: 'Modern Luxury Villa', category: 'Residential' },
+    { id: 2, image: '/projects/project-2.jpeg', title: 'Contemporary Home', category: 'Residential' },
+    { id: 3, image: '/projects/project-3.jpeg', title: 'Multi-Story Residence', category: 'Residential' },
+    { id: 4, image: '/projects/project-4.jpeg', title: 'Beachfront Estate', category: 'Luxury' },
+    { id: 5, image: '/projects/project-5.jpeg', title: 'Modern Villa Night View', category: 'Luxury' },
+    { id: 6, image: '/projects/project-6.jpeg', title: 'Green Building Design', category: 'Eco-Friendly' },
+    { id: 7, image: '/projects/project-7.jpeg', title: 'Premium Interior Space', category: 'Interior' },
+    { id: 8, image: '/projects/project-8.jpeg', title: 'Luxury Kitchen Design', category: 'Interior' },
+    { id: 9, image: '/projects/project-9.jpeg', title: 'Complex Residential Block', category: 'Commercial' },
+    { id: 10, image: '/projects/project-10.jpeg', title: 'Brick & Modern Villa', category: 'Residential' },
+    { id: 11, image: '/projects/project-11.jpeg', title: 'Apartment Complex', category: 'Commercial' },
+    { id: 12, image: '/projects/project-12.jpeg', title: 'Modern Mixed Spaces', category: 'Residential' },
   ]
 
   const containerVariants = {
@@ -53,7 +53,7 @@ export function ProjectsGallery() {
             Our Portfolio
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Explore our collection of exceptional architectural projects showcasing innovation, 
+            Explore our collection of exceptional architectural projects showcasing innovation,
             quality, and excellence across residential and commercial spaces.
           </p>
         </motion.div>
@@ -77,7 +77,7 @@ export function ProjectsGallery() {
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              
+
               {/* Dark Overlay */}
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300" />
 
