@@ -129,9 +129,25 @@ export function ContactSection() {
                 <MapPin className="w-5 sm:w-6 h-5 sm:h-6 text-orange-600 mt-1" />
               </div>
               <div>
-                <h3 className="font-semibold text-slate-900 mb-1 text-sm sm:text-base">Address</h3>
-                <p className="text-sm text-slate-600">ABSPRO India LLP</p>
-                <p className="text-sm text-slate-600">India</p>
+                <h3 className="font-semibold text-slate-900 mb-1 text-sm sm:text-base">Site Office</h3>
+                <p className="text-sm text-slate-600">Tarangan Bldg, Mangalewadi,</p>
+                <p className="text-sm text-slate-600">Near BSNL Office, Vadrage Road,</p>
+                <p className="text-sm text-slate-600">Gadhinglaj 416502</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              variants={itemVariants}
+              className="flex gap-3 sm:gap-4"
+            >
+              <div className="flex-shrink-0">
+                <MapPin className="w-5 sm:w-6 h-5 sm:h-6 text-orange-600 mt-1" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-1 text-sm sm:text-base">Reg. Office</h3>
+                <p className="text-sm text-slate-600">House no 66, at- Medhewadi,</p>
+                <p className="text-sm text-slate-600">Post -Gavase, Tal- Ajara,</p>
+                <p className="text-sm text-slate-600">Dist - Kolhapur 416505</p>
               </div>
             </motion.div>
 

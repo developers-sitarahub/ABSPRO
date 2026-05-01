@@ -6,18 +6,18 @@ import Image from 'next/image'
 export function ProjectsGallery() {
 
   const projects = [
-    { id: 1, image: '/projects/project-1.jpeg', title: 'Modern Luxury Villa', category: 'Residential' },
-    { id: 2, image: '/projects/project-2.jpeg', title: 'Contemporary Home', category: 'Residential' },
-    { id: 3, image: '/projects/project-3.jpeg', title: 'Multi-Story Residence', category: 'Residential' },
-    { id: 4, image: '/projects/project-4.jpeg', title: 'Beachfront Estate', category: 'Luxury' },
-    { id: 5, image: '/projects/project-5.jpeg', title: 'Modern Villa Night View', category: 'Luxury' },
-    { id: 6, image: '/projects/project-6.jpeg', title: 'Green Building Design', category: 'Eco-Friendly' },
-    { id: 7, image: '/projects/project-7.jpeg', title: 'Premium Interior Space', category: 'Interior' },
-    { id: 8, image: '/projects/project-8.jpeg', title: 'Luxury Kitchen Design', category: 'Interior' },
-    { id: 9, image: '/projects/project-9.jpeg', title: 'Complex Residential Block', category: 'Commercial' },
-    { id: 10, image: '/projects/project-10.jpeg', title: 'Brick & Modern Villa', category: 'Residential' },
-    { id: 11, image: '/projects/project-11.jpeg', title: 'Apartment Complex', category: 'Commercial' },
-    { id: 12, image: '/projects/project-12.jpeg', title: 'Modern Mixed Spaces', category: 'Residential' },
+    { id: 1, image: '/projects/project-1.jpeg', title: 'Residential & Commercial Complex', category: 'Mixed-Use' },
+    { id: 2, image: '/projects/project-2.jpeg', title: 'Modern Bungalow Design', category: 'Residential' },
+    { id: 3, image: '/projects/project-3.jpeg', title: 'Contemporary G+2 Residence', category: 'Residential' },
+    { id: 4, image: '/projects/project-4.jpeg', title: 'Laterite Stone Bungalow', category: 'Residential' },
+    { id: 5, image: '/projects/project-5.jpeg', title: 'Site Landscaping Work', category: 'Landscaping' },
+    { id: 6, image: '/projects/project-6.jpeg', title: 'Compact Urban Residence', category: 'Residential' },
+    { id: 7, image: '/projects/project-7.jpeg', title: 'Classic Portico Bungalow', category: 'Residential' },
+    { id: 8, image: '/projects/project-8.jpeg', title: 'Premium Row Houses', category: 'Residential' },
+    { id: 9, image: '/projects/project-9.jpeg', title: '3D Isometric Floor Plan', category: 'Interior' },
+    { id: 10, image: '/projects/project-10.jpeg', title: 'Luxury Villa Elevation', category: 'Luxury' },
+    { id: 11, image: '/projects/project-11.jpeg', title: 'Villa Under Construction', category: 'Ongoing' },
+    { id: 12, image: '/projects/project-12.jpeg', title: 'Modern Facade Detailing', category: 'Architecture' },
   ]
 
   const containerVariants = {

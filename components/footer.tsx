@@ -99,15 +99,27 @@ export function Footer() {
                 <Phone size={12} className="text-orange-400 flex-shrink-0 sm:hidden" />
                 <span className="text-slate-400 truncate">+91-9527973969</span>
               </li>
-              <li className="flex items-center gap-2">
-                <Mail size={14} className="text-orange-400 flex-shrink-0 hidden sm:inline" />
-                <Mail size={12} className="text-orange-400 flex-shrink-0 sm:hidden" />
-                <span className="text-slate-400 truncate">srikant@yahoo.com</span>
+              <li className="flex items-start gap-2">
+                <Mail size={14} className="text-orange-400 flex-shrink-0 mt-1 hidden sm:inline" />
+                <Mail size={12} className="text-orange-400 flex-shrink-0 mt-1 sm:hidden" />
+                <div className="flex flex-col">
+                  <span className="text-slate-400 truncate">abhiphadake01@gmail.com</span>
+                  <span className="text-slate-400 truncate">absproindiallp@gmail.com</span>
+                </div>
               </li>
-              <li className="flex items-center gap-2">
-                <MapPin size={14} className="text-orange-400 flex-shrink-0 hidden sm:inline" />
-                <MapPin size={12} className="text-orange-400 flex-shrink-0 sm:hidden" />
-                <span className="text-slate-400">India</span>
+              <li className="flex items-start gap-2">
+                <MapPin size={14} className="text-orange-400 flex-shrink-0 mt-1 hidden sm:inline" />
+                <MapPin size={12} className="text-orange-400 flex-shrink-0 mt-1 sm:hidden" />
+                <div className="flex flex-col space-y-3">
+                  <div>
+                    <strong className="text-slate-300 block mb-1">Site Office:</strong>
+                    <span className="text-slate-400 text-xs sm:text-sm leading-snug">Tarangan Bldg, Mangalewadi, Near BSNL Office, Vadrage Road, Gadhinglaj 416502</span>
+                  </div>
+                  <div>
+                    <strong className="text-slate-300 block mb-1">Reg. Office:</strong>
+                    <span className="text-slate-400 text-xs sm:text-sm leading-snug">House no 66, at- Medhewadi, Post -Gavase, Tal- Ajara, Dist - Kolhapur 416505</span>
+                  </div>
+                </div>
               </li>
             </ul>
           </motion.div>
