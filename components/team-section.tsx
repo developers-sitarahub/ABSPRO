@@ -6,7 +6,7 @@ import { Mail, Phone } from 'lucide-react'
 export function TeamSection() {
   const directors = [
     {
-      name: 'Mr. Abhijeet Maruti Phadake',
+      name: 'Mr. Abhijit Maruti Phadake',
       role: 'Director',
       email: 'abhiphadake01@gmail.com',
       phone: '8446566926',

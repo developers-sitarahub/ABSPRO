@@ -13,14 +13,14 @@ export function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    
+
     const subject = encodeURIComponent(`New Inquiry from ${formData.name}`)
     const body = encodeURIComponent(
       `Name: ${formData.name}\n` +
       `Phone: ${formData.phone}\n\n` +
       `Message:\n${formData.message}`
     )
-    
+
     window.location.href = `mailto:abhiphadake01@gmail.com,absproindiallp@gmail.com?subject=${subject}&body=${body}`
 
     setFormData({ name: '', phone: '', message: '' })
@@ -88,7 +88,7 @@ export function ContactSection() {
               </div>
               <div>
                 <h3 className="font-semibold text-slate-900 mb-1 text-sm sm:text-base">Contact Person</h3>
-                <p className="text-sm text-slate-600">Mr. Abhijeet Maruti Phadake</p>
+                <p className="text-sm text-slate-600">Mr. Abhijit Maruti Phadake</p>
               </div>
             </motion.div>
 
