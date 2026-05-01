@@ -1,23 +1,29 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, User } from 'lucide-react'
 import { useState } from 'react'
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     phone: '',
     message: '',
   })
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    // You can add your form submission logic here
-    setFormData({ name: '', email: '', phone: '', message: '' })
-    alert('Thank you for your message! We will get back to you soon.')
+    
+    const subject = encodeURIComponent(`New Inquiry from ${formData.name}`)
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Phone: ${formData.phone}\n\n` +
+      `Message:\n${formData.message}`
+    )
+    
+    window.location.href = `mailto:abhiphadake01@gmail.com,absproindiallp@gmail.com?subject=${subject}&body=${body}`
+
+    setFormData({ name: '', phone: '', message: '' })
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -78,11 +84,24 @@ export function ContactSection() {
               className="flex gap-3 sm:gap-4"
             >
               <div className="flex-shrink-0">
+                <User className="w-5 sm:w-6 h-5 sm:h-6 text-orange-600 mt-1" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-1 text-sm sm:text-base">Contact Person</h3>
+                <p className="text-sm text-slate-600">Mr. Abhijeet Maruti Phadake</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              variants={itemVariants}
+              className="flex gap-3 sm:gap-4"
+            >
+              <div className="flex-shrink-0">
                 <Phone className="w-5 sm:w-6 h-5 sm:h-6 text-orange-600 mt-1" />
               </div>
               <div>
                 <h3 className="font-semibold text-slate-900 mb-1 text-sm sm:text-base">Phone</h3>
-                <p className="text-sm text-slate-600">+91-9527973969</p>
+                <p className="text-sm text-slate-600">+91-8446566926</p>
                 <p className="text-xs sm:text-sm text-slate-600">Mon-Sat, 9AM - 6PM IST</p>
               </div>
             </motion.div>
@@ -96,8 +115,9 @@ export function ContactSection() {
               </div>
               <div>
                 <h3 className="font-semibold text-slate-900 mb-1 text-sm sm:text-base">Email</h3>
-                <p className="text-sm text-slate-600">srikant@yahoo.com</p>
-                <p className="text-xs sm:text-sm text-slate-600">Response within 24 hours</p>
+                <p className="text-sm text-slate-600">abhiphadake01@gmail.com</p>
+                <p className="text-sm text-slate-600">absproindiallp@gmail.com</p>
+                <p className="text-xs sm:text-sm text-slate-600 mt-1">Response within 24 hours</p>
               </div>
             </motion.div>
 
@@ -171,21 +191,7 @@ export function ContactSection() {
               />
             </motion.div>
 
-            <motion.div variants={itemVariants}>
-              <label htmlFor="email" className="block text-xs sm:text-sm font-semibold text-slate-900 mb-2">
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-slate-100 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-600 text-slate-900 placeholder-slate-500 transition-colors text-sm"
-                placeholder="your@email.com"
-              />
-            </motion.div>
+
 
             <motion.div variants={itemVariants}>
               <label htmlFor="phone" className="block text-xs sm:text-sm font-semibold text-slate-900 mb-2">

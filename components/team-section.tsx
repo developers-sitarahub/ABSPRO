@@ -6,12 +6,6 @@ import { Mail, Phone } from 'lucide-react'
 export function TeamSection() {
   const directors = [
     {
-      name: 'Mr. Srikant Kallappa Patil',
-      role: 'Director',
-      email: 'srikant@yahoo.com',
-      phone: '9527973969',
-    },
-    {
       name: 'Mr. Abhijeet Maruti Phadake',
       role: 'Director',
       email: 'abhiphadake01@gmail.com',
@@ -22,6 +16,12 @@ export function TeamSection() {
       role: 'Director',
       email: 'pankajvaskar10@gmail.com',
       phone: '8652085335',
+    },
+    {
+      name: 'Mr. Srikant Kallappa Patil',
+      role: 'Director',
+      email: 'srikant@yahoo.com',
+      phone: '9527973969',
     },
     {
       name: 'Mr. Ronit Ranjeet Saveker',
