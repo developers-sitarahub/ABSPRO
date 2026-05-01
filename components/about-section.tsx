@@ -125,6 +125,27 @@ export function AboutSection() {
             )
           })}
         </motion.div>
+
+        {/* Partners Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="mt-16 sm:mt-20 border-t border-slate-200 pt-12 sm:pt-16 text-center"
+        >
+          <h3 className="text-2xl font-bold text-slate-900 mb-8">Our Partner Companies</h3>
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
+            {['Swami Samarth Buildcon', 'Swami Samarth Enterprises', 'Maruti Enterprises', 'Swamini Enterprises'].map((partner, index) => (
+              <div 
+                key={index}
+                className="px-6 py-3 bg-slate-50 border border-slate-200 rounded-full text-slate-700 font-semibold text-sm sm:text-base hover:bg-orange-50 hover:border-orange-200 hover:text-orange-700 transition-all cursor-default shadow-sm hover:shadow"
+              >
+                {partner}
+              </div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   )
